@@ -24,7 +24,6 @@ class RoksCli < Formula
 
   def install
     bin.install "roks"
-    ...
   end
 
   def caveats; <<~EOS
@@ -36,13 +35,10 @@ class RoksCli < Formula
 
   def plist; <<~EOS
     <?xml version="1.0" encoding="UTF-8"?>
-...
-
   EOS
   end
 
   test do
     system "#{bin}/roks --version"
-    ...
   end
 end
